@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html style="background-color: #efefef;">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Brainy features</title>
+        <script type="module" src="https://unpkg.com/vue@3/dist/vue.esm-browser.js"></script>
+        <link rel="stylesheet" href="\stylesheets\style.css">
+    </head>
+    <body>
+        <div id="navBar">
+            <ul>
+            <img src="/images/brainbox_logo.png" alt="brainbox logo" width="55px" height="auto">
+            <p>BrainBox</p>
+            <li><a style="background-color: #8b67c2;"  onmouseover="this.style.backgroundColor='#9876cc'" onmouseout="this.style.backgroundColor='#8b67c2'" 
+                href="home.html#our product">Our Product</a></li>
+            <li><a a style="background-color: #7854b0;"  onmouseover="this.style.backgroundColor='#9876cc'" onmouseout="this.style.backgroundColor='#7854b0'" 
+                href="home.html#features">Features</a></li>
+            <li><a style="background-color: #8b67c2;"  onmouseover="this.style.backgroundColor='#9876cc'" onmouseout="this.style.backgroundColor='#8b67c2'" 
+                href="/html/aboutus.html">About Us</a></li>
+            </ul>
+        </div>
+
+        <div class="featureContent fade" style="display: block;">
+            <img src="/images/Brainy_showcase.png" alt="" width="auto" height="400px" style="margin: 0;">
+            <div class="text">
+                <h1> Your personal assistant </h1>
+                Brainy can help you out with tips and tricks to make sure you use Brainbox to the fullest.
+            </div>
+        </div>
+
+        <div class="featureContent fade" style="display: none;">
+            <img src="/images/settings.png" alt="" width="auto" height="400px" style="margin: 0;">
+            <div class="text">
+                <h1> Clear and easy settings </h1>
+                Brainy also helps with your settings, making it clear what each setting dose.
+            </div>
+        </div>
+
+        <div class="featureContent fade" style="display: none;">
+            <img src="/images/FAQ.png" alt="" width="auto" height="400px" style="margin: 0;">
+            <div class="text">
+                <h1> Ask questions </h1>
+                Brainy can answer any question you have about Brainbox or revisit your past questions.
+            </div>
+        </div>
+
+        <div id="features">
+            <ul>
+                <li class="button Brainy active" onclick=change(0)><p>Your personal assistant</p></li>
+                <li class="button Brainy" onclick=change(1)><p>Clear and easy settings</p></li>
+                <li class="button Brainy" onclick=change(2)><p>Ask questions</p></li>
+            </ul>
+        </div>
+
+        <script>
+            function change(n) {
+                let featureContents = document.getElementsByClassName("featureContent");
+                let buttons = document.getElementsByClassName("button");
+                
+                for (i = 0; i < featureContents.length; i++) {
+                    featureContents[i].style.display = "none";  
+                }
+
+                for (i = 0; i < buttons.length; i++) {
+                    buttons[i].className = buttons[i].className.replace(" active", "");
+                }
+
+                featureContents[n].style.display = "block";  
+                buttons[n].className += " active";
+            }
+        </script>
+    </body>
+</html>

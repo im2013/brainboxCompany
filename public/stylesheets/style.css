@@ -1,0 +1,278 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  float: center;
+  margin: 0;
+  position: relative;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#navBar {
+  position: fixed;
+  z-index: 1;
+}
+
+#navBar ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #7854b0;
+  display: flex;
+  width: 100vw;
+}
+
+#navBar #Brainlink {
+  background-color: #16617B;
+}
+
+#navBar #Groups {
+  background-color: #CC744A;
+}
+
+#navBar #Brainframe {
+  background-color: #BCA664;
+}
+
+#navBar li {
+  flex: 1;
+}
+
+#navBar p {
+  color: white;
+  font-size: 16px;
+  width: 100px;
+  float: left;
+  padding: 8px 15px;
+  padding-right: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+#navBar a {
+  float: left;
+  display: flex;
+  padding: 8px;
+  color: white;
+  width: 100%;
+  height: 50px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#navBar img {
+  float: left;
+  padding: 3px;
+}
+
+#homepageBox {
+  position: relative;
+  text-align: center;
+  margin: 0;
+  width: 100vw;
+}
+
+#homepageBox_Text {
+  position: absolute;
+  top: 10%;
+  left: -15%;
+  width: 80%;
+  height: auto;
+}
+
+#fade-overlay {
+  position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50px; /* Adjust the height of the fade as needed */
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+
+#Homepage_middle {
+  padding-top: 100px;
+}
+
+#homepageImageContainer {
+  position: relative;
+      width: 100vw;
+      height: auto;
+      overflow: hidden;
+}
+
+#Homepage_middle {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#homepage_middle_box_image img {
+  flex: 1;
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+}
+
+#homepage_middle_box_image a {
+  position: absolute;
+  bottom: 25px;
+  display: block;
+  transform: translateX(30%);
+}
+
+#Homepage_middle_2 {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#homepage_middle_box_2_images img {
+  flex: 1;
+  box-sizing: border-box;
+  display: block;
+  margin: 30px;
+  margin-left: 50px;
+}
+
+#homepage_middle_box_2_images p {
+  position: absolute;
+  display: block;
+  flex-wrap: wrap;
+}
+
+#homepage_middle_text p {
+  margin-top:5%; 
+  width:160px;
+  text-align: left;
+  display: flexbox;
+  flex-wrap:wrap;
+}
+
+#homepage_bottomBox {
+  width: 100vw;
+  height: auto;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+}
+
+#homepage_bottomBox h2 {
+  color: white;
+  display:block;
+  text-align: center;
+  position: absolute;
+  margin-top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+
+#homepage_bottomBox button {
+  color: white;
+  display:block;
+  text-align: center;
+  position: absolute;
+  margin-top: 46%;
+  left: 50%;
+  font-size: 18px;
+  background-color: #7854b0;
+  border: none;
+  padding: 5px;
+  transform: translate(-50%, -50%);
+}
+
+#homepage_bottomBox button:hover {
+  background-color: #9876cc;
+}
+
+#features {
+  position: relative;
+  top: -150px;
+  left: 70px;
+}
+
+#features ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-width: 300px;
+}
+
+#features li p {
+  display: block;
+  font-size: 20px;
+  color: #000;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+
+#features li {
+  border-radius: 25px;
+  text-align: center;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.featureContent {
+  max-width: 1000px;
+  left: 25%;
+  position: relative;
+  top: 150px;
+}
+
+.text {
+  color: #000;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: -130px;
+  width: 100%;
+  text-align: left;
+}
+
+.text h1 {
+  position: absolute;
+  bottom: 40px;
+  text-align: left;
+  font-size: 25px;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#features .Brainlink.active, .Brainlink:hover {
+  background-color: #B2DFE8;
+}
+
+#features .Brainy.active, .Brainy:hover {
+  background-color: #C0B6DE;
+}
+
+#features .Groups.active, .Groups:hover {
+  background-color: #F7BC95;
+}
+
+#features .Brainframe.active, .Brainframe:hover {
+  background-color: #EADFAF;
+}
