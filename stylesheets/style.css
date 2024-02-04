@@ -18,63 +18,6 @@ a {
   z-index: 1;
 }
 
-#navBar ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  overflow: hidden;
-  background-color: #7854b0;
-  display: flex;
-  width: 100vw;
-}
-
-#navBar #Brainlink {
-  background-color: #16617B;
-}
-
-#navBar #Groups {
-  background-color: #CC744A;
-}
-
-#navBar #Brainframe {
-  background-color: #BCA664;
-}
-
-#navBar li {
-  flex: 1;
-}
-
-#navBar p {
-  color: white;
-  font-size: 16px;
-  width: 100px;
-  float: left;
-  padding: 8px 15px;
-  padding-right: 40px;
-  justify-content: center;
-  align-items: center;
-}
-
-#navBar a {
-  float: left;
-  display: flex;
-  padding: 8px;
-  color: white;
-  width: 100%;
-  height: 50px;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
-#navBar img {
-  float: left;
-  padding: 3px;
-}
-
 #aboutUsBanner {
 
   background: linear-gradient(135deg, #d8c1eb, #a28ccf);
@@ -197,6 +140,64 @@ a {
 .teamMember p {
   margin: 10px 0;
   padding-bottom: 20%;
+}
+
+#navBar ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #7854b0;
+  display: flex;
+  width: 100vw;
+}
+
+#navBar #Brainlink {
+  background-color: #16617B;
+}
+
+#navBar #Groups {
+  background-color: #CC744A;
+}
+
+#navBar #Brainframe {
+  background-color: #BCA664;
+}
+
+#navBar li {
+  flex: 1;
+}
+
+#navBar p {
+  color: white;
+  font-size: 16px;
+  width: 100px;
+  float: left;
+  padding: 8px 15px;
+  padding-right: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#navBar a {
+  float: left;
+  display: flex;
+  padding: 8px;
+  color: white;
+  width: 100%;
+  height: 50px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#navBar img {
+  float: left;
+  padding: 3px;
 }
 
 #homepageBox {
