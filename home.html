@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html style="background-color:white;">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page</title>
+        <script type="module" src="https://unpkg.com/vue@3/dist/vue.esm-browser.js"></script>
+        <link rel="stylesheet" href="\stylesheets\style.css">
+    </head>
+    <body>
+      <div id="navBar">
+        <ul>
+          <img src="/images/brainbox_logo.png" alt="brainbox logo" width="55px" height="auto">
+          <p>BrainBox</p>
+          <li><a style="background-color: #8b67c2;"  onmouseover="this.style.backgroundColor='#9876cc'" onmouseout="this.style.backgroundColor='#8b67c2'" 
+            href="#our product">Our Product</a></li>
+          <li><a a style="background-color: #7854b0;"  onmouseover="this.style.backgroundColor='#9876cc'" onmouseout="this.style.backgroundColor='#7854b0'" 
+            href="#features">Features</a></li>
+          <li><a style="background-color: #8b67c2;"  onmouseover="this.style.backgroundColor='#9876cc'" onmouseout="this.style.backgroundColor='#8b67c2'" 
+            href="/html/aboutus.html">About Us</a></li>
+        </ul>
+      </div>
+
+      <div id="homepageBox">
+        <div id="homepageImageContainer">
+          <img src="/images/homepage_background_1.png" alt="homepage_background_1" width="100%" height="auto">
+          <div id="fade-overlay"></div>
+        </div>
+
+      <div id="homepageBox_Text">
+      <img src="/images/homepage_background_2.png" alt="homepage_background_2" width="60%" height="60%">
+    </div>
+
+    <section id="our product"></section>
+    <h2 style="color:#8b67c2; margin-top: 100px">What is possible with BrainBox?</h2>
+         <p>Brainstorm ideas with your groups, get tasks <br> done quicker when minds combine, and simplify get togethers</p>
+      <div id="Homepage_middle" style="margin-top: -60px">
+        <div id="homepage_middle_box_image">
+          <img src="/images/Education.png" alt="" width="200px" height="200px">
+          <a href="/html/education.html">Education</a>
+        </div>
+        <div id="homepage_middle_box_image">
+          <img src="/images/Business.png" alt="" width="200px" height="200px">
+          <a href="/html/business.html">Business</a>
+        </div>
+        <div id="homepage_middle_box_image">
+          <img src="/images/Virtual_Events.png" alt="" width="200px" height="200px">
+          <a href="/html/virtualEvents.html">Virtual Events</a>
+        </div>
+        </div>
+      </div>
+
+      <section id="features"></section>
+      <h2 style="color:#8b67c2; margin-top: 100px; text-align: center;">What to expect from BrainBox</h2>
+      <div id="Homepage_middle_2">
+        <div id="homepage_middle_box_2_images">
+          <img src="/images/vc_icon.png" alt="" width="100px" height="100px">
+          <p style="transform: translateX(55%); color: #006a78; font-weight: bold; font-size: 20px; margin-top:1%;">BrainLink</p>
+            <div id="homepage_middle_text">
+              <p style="transform: translateX(10%)">BrainLink allows everyone to communicate in many ways, like Online meetings, Video calls, webinars, instant messaging and much more</p>
+              <a href="/html/brainlink_info.html"><p style="transform: translateY(140px) translateX(15px); text-decoration: underline; text-align: center;color: #006a78; font-weight: bold;">Learn More</p></a>
+            </div>
+          </div>
+          <div id="homepage_middle_box_2_images">
+          <img src="/images/brainy_icon.png" alt="" width="100px" height="100px">
+          <p style="transform: translateX(105%); color: #423076; font-weight: bold; font-size: 20px; margin-top:1%;">Brainy</p>
+          <div id="homepage_middle_text">
+            <p style="transform: translateX(10%)">Brainy will be your own personal AI assistant that helps you use BrainBox to the fullest. He can give you tips and tricks on the app, help you with settings and even answer some questions.</p>
+            <a href="/html/brainy_info.html"><p style="transform: translateY(140px) translateX(15px); text-decoration: underline; text-align: center;color: #423076; font-weight: bold;">Learn More</p></a>
+          </div>
+          </div>
+          <div id="homepage_middle_box_2_images">
+          <img src="/images/groupSys_icon.png" alt="" width="100px" height="100px">
+          <p style="transform: translateX(90%); color: #eb7b34; font-weight: bold; font-size: 20px; margin-top:1%;">Groups</p>
+          <div id="homepage_middle_text">
+            <p style="transform: translateX(17.5%)">Anyone can create groups, allowing people to get together and brainstorm new ideas. Or create groups for virtual events, allowing everything to be nice and organised</p>
+            <a href="/html/groups_info.html"><p style="transform: translateY(140px) translateX(20px); text-decoration: underline; text-align: center; color: #eb7b34; font-weight: bold;">Learn More</p></a>
+          </div>
+          </div>
+          <div id="homepage_middle_box_2_images">
+          <img src="/images/dis_icon.png" alt="" width="100px" height="100px">
+          <p style="transform: translateX(45%); color: #dbc35c; font-weight: bold; font-size: 20px; margin-top:1%;">Brainframe</p>
+          <div id="homepage_middle_text">
+            <p style="transform: translateX(15%)">BrainFrame saves all the files that you have shared with your groups, it also keeps track of the files that you have edited.</p>
+            <a href="/html/brainframe_info.html"><p style="transform: translateY(140px) translateX(15px); text-decoration: underline; text-align: center;color: #dbc35c; font-weight: bold;">Learn More</p></a>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div id="homepage_bottomBox">
+        <h2>Get Connected.</h2>
+        <button onclick="rdrSignin()">Visit our Product</button>
+        <img src="/images/background_cloud.png" style="height: auto; width: 100vw; margin-top:25%">
+      </div>
+
+
+      <script>
+        function rdrSignin() { window.location.href = "signup.html";}
+      </script>
+
+    </body>
+</html>
