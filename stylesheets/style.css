@@ -23,26 +23,30 @@ a {
   background: linear-gradient(135deg, #d8c1eb, #a28ccf);
   text-align: center;
   padding: 20px 0; 
-  height: 250px;
+  height: 20vh;
   width: 100%;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-  font-size: 36px;
+  font-size: 3vh;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+#aboutUsBanner h1 {
+  margin-top: 50px;
+}
+
 #spacer {
-  height: 50px;
+  height: 0px;
 }
 
 #companyInfoContainer {
   display: flex;
   flex-direction: column;
-  width: 33%; 
-  height: calc(100vh - 400px);
+  width: 66vh; 
+  height: calc(80vh - 80px);
   padding: 20px;
 }
 
@@ -83,14 +87,14 @@ a {
 
 #companyInfo img {
   max-width: 100%;
-  width: 50%;
+  width: auto;
   margin: 13%;
   margin-left: 25%;
   align-self: center;
 }
 
 #ourTeam {
-  width: 66%;
+  width: 132vh;
   height: 100%;
 }
 
@@ -112,7 +116,6 @@ a {
 }
 
 .teamMemberInfo {
-  height:14vh;
 }
 
 .teamMember {
@@ -123,6 +126,7 @@ a {
   padding: 20px;
   text-align: center;
   margin-bottom: 20px; 
+  height: 25vh;
 }
 
 .teamMember img {
