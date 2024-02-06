@@ -19,18 +19,17 @@ a {
 }
 
 #aboutUsBanner {
-
   background: linear-gradient(135deg, #d8c1eb, #a28ccf);
   text-align: center;
   padding: 20px 0; 
-  height: 250px;
-  width: 100%;
+  height: 15vh;
+  width: 100vw;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-  font-size: 36px;
+  font-size: 26px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -42,7 +41,7 @@ a {
   display: flex;
   flex-direction: column;
   width: 33%; 
-  height: calc(100vh - 400px);
+  height: 60vh;
   padding: 20px;
 }
 
@@ -50,8 +49,7 @@ a {
   background-color: #f7f7f7; 
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(36, 34, 34, 0.1); 
-  flex-grow: 1; 
-  overflow: hidden;
+  flex-grow: 1;
 }
 
 #containerWrapper {
@@ -60,13 +58,13 @@ a {
 }
 
 #companyInfo h2 {
-  font-size: 40px;
+  font-size: 15px;
   color: #443277; 
   margin-bottom: 20px;
 }
 
 #companyInfo p {
-  font-size: 16px;
+  font-size: 10px;
   line-height: 1.6;
   color: #777; 
 }
@@ -84,26 +82,26 @@ a {
 #companyInfo img {
   max-width: 100%;
   width: 50%;
-  margin: 13%;
+  height: auto;
+  margin: 5%;
   margin-left: 25%;
   align-self: center;
 }
 
 #ourTeam {
   width: 66%;
-  height: 100%;
+  height: 65vh;
 }
 
 #ourTeam h2 {
-  font-size: 40px;
+  font-size: 15px;
   color: #443277; 
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   padding: 20px;
   padding-left: 80px;
 }
 
 #teamGridContainer {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -116,30 +114,61 @@ a {
 }
 
 .teamMember {
-  flex: 0 0 calc(28% - 20px); 
+  height: 20vh;
+  flex: 0 0 calc(28% - 20px);
   background-color: #f7f7f7;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(36, 34, 34, 0.1);
-  padding: 20px;
+  padding: 10px;
   text-align: center;
-  margin-bottom: 20px; 
+  margin-bottom: 0px; 
 }
 
 .teamMember img {
-  width: 100px; 
+  max-width: 50px;
+  width: 30%; 
   height: auto;
   border-radius: 100%; 
 }
 
 .teamMember h1 {
-  font-size: 20px;
+  font-size: 10px;
   color: #443277; 
   margin: 10px 0;
 }
-
+.teamMember h3 {
+  font-size: 7px;
+}
 .teamMember p {
+  display: block;
+  font-size: 6px;
   margin: 10px 0;
-  padding-bottom: 20%;
+}
+
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+#companyInfo h2 {font-size: 25px;}
+#companyInfo p {font-size: 12px;}
+#ourTeam h2 {font-size: 25px;}
+.teamMember h1 {font-size: 15px;}
+.teamMember h3 {font-size: 10px;}
+.teamMember p {font-size: 8px;}
+}
+
+/* For desktop: */
+@media only screen and (min-width: 725px) {
+#companyInfo h2 {font-size: 30px;}
+#companyInfo p {font-size: 13px;}
+#ourTeam h2 {font-size: 30px;}
+.teamMember h1 {font-size: 20px;}
+.teamMember h3 {font-size: 13px;}
+}
+
+@media only screen and (min-width: 930px) {
+  #companyInfo h2 {font-size: 40px;}
+  #ourTeam h2 {font-size: 40px;}
+  .teamMember h3 {font-size: 15px;}
+  .teamMember p {font-size: 10px;}  
 }
 
 #navBar ul {
@@ -178,6 +207,7 @@ a {
   justify-content: center;
   align-items: center;
 }
+
 
 
 #navBar a {
