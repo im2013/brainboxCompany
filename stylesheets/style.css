@@ -33,8 +33,12 @@ a {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+#aboutUsBanner h1 {
+  margin-top: 50px;
+}
+
 #spacer {
-  height: 50px;
+  height: 0px;
 }
 
 #companyInfoContainer {
@@ -110,7 +114,6 @@ a {
 }
 
 .teamMemberInfo {
-  height:14vh;
 }
 
 .teamMember {
