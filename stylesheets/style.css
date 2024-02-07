@@ -33,12 +33,8 @@ a {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#aboutUsBanner h1 {
-  margin-top: 50px;
-}
-
 #spacer {
-  height: 0px;
+  height: 50px;
 }
 
 #companyInfoContainer {
@@ -147,32 +143,6 @@ a {
   display: block;
   font-size: 6px;
   margin: 10px 0;
-}
-
-/* For tablets: */
-@media only screen and (min-width: 600px) {
-#companyInfo h2 {font-size: 25px;}
-#companyInfo p {font-size: 12px;}
-#ourTeam h2 {font-size: 25px;}
-.teamMember h1 {font-size: 15px;}
-.teamMember h3 {font-size: 10px;}
-.teamMember p {font-size: 8px;}
-}
-
-/* For desktop: */
-@media only screen and (min-width: 725px) {
-#companyInfo h2 {font-size: 30px;}
-#companyInfo p {font-size: 13px;}
-#ourTeam h2 {font-size: 30px;}
-.teamMember h1 {font-size: 20px;}
-.teamMember h3 {font-size: 13px;}
-}
-
-@media only screen and (min-width: 930px) {
-  #companyInfo h2 {font-size: 40px;}
-  #ourTeam h2 {font-size: 40px;}
-  .teamMember h3 {font-size: 15px;}
-  .teamMember p {font-size: 10px;}  
 }
 
 #navBar ul {
@@ -360,20 +330,17 @@ a {
 
 #features {
   position: relative;
-  top: -150px;
-  left: 70px;
+  top: -50%;
 }
 
 #features ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  max-width: 300px;
+  width: 200px;
 }
 
 #features li p {
   display: block;
-  font-size: 20px;
+  font-size: 10px;
   color: #000;
   padding: 16px 16px;
   text-decoration: none;
@@ -387,19 +354,24 @@ a {
 }
 
 .featureContent {
-  max-width: 1000px;
-  left: 25%;
+  left: 50%;
   position: relative;
-  top: 150px;
+  top: 130px;
+}
+
+.featureContent img {
+  width: 50vw;
+  height: 30vw;
 }
 
 .text {
   color: #000;
-  font-size: 20px;
+  font-size: 13px;
   padding: 8px 12px;
   position: absolute;
   bottom: -130px;
-  width: 100%;
+  left: -100px;
+  width: 50vw;
   text-align: left;
 }
 
@@ -407,7 +379,7 @@ a {
   position: absolute;
   bottom: 40px;
   text-align: left;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .fade {
@@ -435,3 +407,44 @@ a {
 #features .Brainframe.active, .Brainframe:hover {
   background-color: #EADFAF;
 }
+
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+  .text {font-size: 15px;}
+  .text h1 {font-size: 25px;}
+  #features ul {width: 250px;}
+  #features li p {font-size: 15px;}
+  #features {top: -100px;}
+
+  #companyInfo h2 {font-size: 25px;}
+  #companyInfo p {font-size: 12px;}
+  #ourTeam h2 {font-size: 25px;}
+  .teamMember h1 {font-size: 15px;}
+  .teamMember h3 {font-size: 10px;}
+  .teamMember p {font-size: 8px;}
+  }
+  
+  /* For desktop: */
+  @media only screen and (min-width: 725px) {
+  .featureContent {left: 40%;}
+
+  #companyInfo h2 {font-size: 30px;}
+  #companyInfo p {font-size: 13px;}
+  #ourTeam h2 {font-size: 30px;}
+  .teamMember h1 {font-size: 20px;}
+  .teamMember h3 {font-size: 13px;}
+  }
+  
+  @media only screen and (min-width: 930px) {
+    .featureContent {left: 30%;}
+    .text {font-size: 20px;}
+    .text h1 {font-size: 25px;}
+    #features ul {width: 300px;}
+    #features li p {font-size: 20px;}
+    #features {top: -120px;}
+
+    #companyInfo h2 {font-size: 40px;}
+    #ourTeam h2 {font-size: 40px;}
+    .teamMember h3 {font-size: 15px;}
+    .teamMember p {font-size: 10px;}  
+  }
