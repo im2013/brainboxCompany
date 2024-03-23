@@ -172,12 +172,13 @@ a {
 }
 
 #navBar p {
+  display: flex;
   color: white;
-  font-size: 16px;
-  width: 100px;
+  font-size: 10px;
+  width: 12vw;
   float: left;
   padding: 8px 15px;
-  padding-right: 40px;
+  padding-right: 20px;
   justify-content: center;
   align-items: center;
 }
@@ -187,13 +188,12 @@ a {
 #navBar a {
   float: left;
   display: flex;
-  padding: 8px;
   color: white;
   width: 100%;
-  height: 50px;
+  height: 67px;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 10px;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -213,7 +213,7 @@ a {
 
 #homepageBox_Text {
   position: absolute;
-  top: 10%;
+  top: 10vw;
   left: -15%;
   width: 80%;
   height: auto;
@@ -254,11 +254,10 @@ a {
   margin: 0 auto;
 }
 
-#homepage_middle_box_image a {
-  position: absolute;
-  bottom: 25px;
+#homepage_middle_box_image .links {
+  position: relative;
+  bottom: 36px;
   display: block;
-  transform: translateX(30%);
 }
 
 #Homepage_middle_2 {
@@ -283,49 +282,57 @@ a {
   flex-wrap: wrap;
 }
 
-#homepage_middle_text p {
-  margin-top:5%; 
-  width:160px;
+.homepage_middle_text {
+  position: relative;
+  margin-top: 58px;
+  width: 160px;
   text-align: left;
-  display: flexbox;
-  flex-wrap:wrap;
+  margin-bottom: 230px;
 }
+
+.homepage_middle_text a p {transform: translateY(90px) translateX(50px);}
 
 #homepage_bottomBox {
   width: 100vw;
   height: auto;
-  align-items: center;
   align-content: center;
   margin: 0;
 }
 
-#homepage_bottomBox h2 {
-  color: white;
-  display:block;
-  text-align: center;
-  position: absolute;
-  margin-top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 30px;
+#homepage_bottomBox .bottom_content {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  top: 55vw;
 }
 
-#homepage_bottomBox button {
+#homepage_bottomBox .bottom_content h2 {
   color: white;
-  display:block;
+  display: block;
+  margin: 4px;
   text-align: center;
-  position: absolute;
-  margin-top: 46%;
-  left: 50%;
+  font-size: 25px;
+}
+
+#homepage_bottomBox .bottom_content button {
+  color: white;
+  position: relative;
+  display: block;
+  text-align: center;
   font-size: 18px;
   background-color: #7854b0;
   border: none;
   padding: 5px;
-  transform: translate(-50%, -50%);
 }
 
-#homepage_bottomBox button:hover {
+#homepage_bottomBox .bottom_content button:hover {
   background-color: #9876cc;
+}
+
+@media only screen and (min-width: 360px) {
+  .homepage_middle_text a p {transform: translateY(140px) translateX(50px);}
+  #homepage_bottomBox .bottom_content {top: 50vw;}
 }
 
 #features {
@@ -354,6 +361,7 @@ a {
 }
 
 .featureContent {
+  width: 50vw;
   left: 50%;
   position: relative;
   top: 130px;
@@ -410,29 +418,31 @@ a {
 
 /* For tablets: */
 @media only screen and (min-width: 600px) {
-  .text {font-size: 15px;}
-  .text h1 {font-size: 25px;}
-  #features ul {width: 250px;}
-  #features li p {font-size: 15px;}
-  #features {top: -100px;}
+    #navBar p {font-size: 16px;}
+    #navBar a {font-size: 16px;}
+    .text {font-size: 15px;}
+    .text h1 {font-size: 25px;}
+    #features ul {width: 250px;}
+    #features li p {font-size: 15px;}
+    #features {top: -100px;}
 
-  #companyInfo h2 {font-size: 25px;}
-  #companyInfo p {font-size: 12px;}
-  #ourTeam h2 {font-size: 25px;}
-  .teamMember h1 {font-size: 15px;}
-  .teamMember h3 {font-size: 10px;}
-  .teamMember p {font-size: 8px;}
+    #companyInfo h2 {font-size: 25px;}
+    #companyInfo p {font-size: 12px;}
+    #ourTeam h2 {font-size: 25px;}
+    .teamMember h1 {font-size: 15px;}
+    .teamMember h3 {font-size: 10px;}
+    .teamMember p {font-size: 8px;}
   }
   
   /* For desktop: */
   @media only screen and (min-width: 725px) {
-  .featureContent {left: 40%;}
+    .featureContent {left: 40%;}
 
-  #companyInfo h2 {font-size: 30px;}
-  #companyInfo p {font-size: 13px;}
-  #ourTeam h2 {font-size: 30px;}
-  .teamMember h1 {font-size: 20px;}
-  .teamMember h3 {font-size: 13px;}
+    #companyInfo h2 {font-size: 30px;}
+    #companyInfo p {font-size: 13px;}
+    #ourTeam h2 {font-size: 30px;}
+    .teamMember h1 {font-size: 20px;}
+    .teamMember h3 {font-size: 13px;}
   }
   
   @media only screen and (min-width: 930px) {
