@@ -6,13 +6,8 @@
         <title>Brainlink features</title>
         <script type="module" src="https://unpkg.com/vue@3/dist/vue.esm-browser.js"></script>
         <link rel="stylesheet" href="/brainboxCompany/stylesheets/style.css">
-        <style>
-            body {
-              overflow: hidden;
-            }
-        </style>
     </head>
-    <body>
+    <body class="scroll">
         <div id="navBar">
             <ul id="Brainlink">
             <img src="/brainboxCompany/images/brainbox_logo.png" alt="brainbox logo" width="55px" height="auto">
@@ -26,36 +21,41 @@
             </ul>
         </div>
 
-        <div class="featureContent fade" style="display: block;">
-            <img src="/brainboxCompany/images/Voice_chat.png" alt="" width="auto" height="400px" style="margin: 0;">
-            <div class="text">
-                <h1> Voice chat </h1>
-                Have meetings with your group members, get together and brainstorm your ideas with voice chats.
-            </div>
-        </div>
+        <div id="spacer"></div>
 
-        <div class="featureContent fade" style="display: none;">
-            <img src="/brainboxCompany/images/Session.png" alt="" width="auto" height="400px" style="margin: 0;">
-            <div class="text">
-                <h1> Sessions </h1>
-                Set up Sessions in advance, making your online meetings nice and organised.
+        <div class="content">
+            
+            <div id="features">
+                <ul>
+                    <li class="button Brainlink active" onclick=change(0)><p>Voice chat</p></li>
+                    <li class="button Brainlink" onclick=change(1)><p>Sessions</p></li>
+                    <li class="button Brainlink" onclick=change(2)><p>Instant messaging</p></li>
+                </ul>
             </div>
-        </div>
 
-        <div class="featureContent fade" style="display: none;">
-            <img src="/brainboxCompany/images/chat.png" alt="" width="auto" height="400px" style="margin: 0;">
-            <div class="text">
-                <h1> Instant messaging </h1>
-                Bring more people into your conversation, or send messages to yourself to draft a message or store important notes.
+            <div class="featureContent fade" style="display: block;">
+                <img src="/brainboxCompany/images/Voice_chat.png" alt="" width="auto" height="400px" style="margin: 0;">
+                <div class="text">
+                    <h1> Voice chat </h1>
+                    Have meetings with your group members, get together and brainstorm your ideas with voice chats.
+                </div>
             </div>
-        </div>
 
-        <div id="features">
-            <ul>
-                <li class="button Brainlink active" onclick=change(0)><p>Voice chat</p></li>
-                <li class="button Brainlink" onclick=change(1)><p>Sessions</p></li>
-                <li class="button Brainlink" onclick=change(2)><p>Instant messaging</p></li>
-            </ul>
+            <div class="featureContent fade" style="display: none;">
+                <img src="/brainboxCompany/images/Session.png" alt="" width="auto" height="400px" style="margin: 0;">
+                <div class="text">
+                    <h1> Sessions </h1>
+                    Set up Sessions in advance, making your online meetings nice and organised.
+                </div>
+            </div>
+
+            <div class="featureContent fade" style="display: none;">
+                <img src="/brainboxCompany/images/chat.png" alt="" width="auto" height="400px" style="margin: 0;">
+                <div class="text">
+                    <h1> Instant messaging </h1>
+                    Bring more people into your conversation, or send messages to yourself to draft a message or store important notes.
+                </div>
+            </div>
         </div>
 
         <script>

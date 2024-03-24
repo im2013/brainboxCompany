@@ -145,10 +145,10 @@ a {
   margin: 10px 0;
 }
 
-.aboutusPage { overflow: visible; }
+.scroll { overflow: visible; }
 
 @media only screen and (min-height: 720px) {
-  .aboutusPage { overflow: hidden; }
+  .scroll { overflow: hidden; }
 }
 
 #navBar ul {
@@ -366,11 +366,16 @@ a {
   transition-duration: 0.4s;
 }
 
+.content {
+  margin-top: 10px;
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+}
+
 .featureContent {
   width: 50vw;
-  left: 50%;
-  position: relative;
-  top: 130px;
 }
 
 .featureContent img {
@@ -382,16 +387,11 @@ a {
   color: #000;
   font-size: 13px;
   padding: 8px 12px;
-  position: absolute;
-  bottom: -130px;
-  left: -100px;
   width: 50vw;
   text-align: left;
 }
 
 .text h1 {
-  position: absolute;
-  bottom: 40px;
   text-align: left;
   font-size: 20px;
 }
@@ -430,7 +430,6 @@ a {
     .text h1 {font-size: 25px;}
     #features ul {width: 250px;}
     #features li p {font-size: 15px;}
-    #features {top: -100px;}
 
     #companyInfo h2 {font-size: 25px;}
     #companyInfo p {font-size: 10px;}
@@ -443,8 +442,6 @@ a {
   
   /* For desktop: */
   @media only screen and (min-width: 725px) {
-    .featureContent {left: 40%;}
-
     #companyInfo h2 {font-size: 30px;}
     #ourTeam h2 {font-size: 30px;}
     .teamMember h1 {font-size: 20px;}
@@ -453,12 +450,12 @@ a {
   }
   
   @media only screen and (min-width: 930px) {
-    .featureContent {left: 30%;}
+    .content {flex-direction: row; margin-top: 40px;}
+    .featureContent{margin-left: 50px;}
     .text {font-size: 20px;}
     .text h1 {font-size: 25px;}
     #features ul {width: 300px;}
     #features li p {font-size: 20px;}
-    #features {top: -120px;}
 
     #companyInfo h2 {font-size: 40px;}
     #companyInfo p {font-size: 12px;}

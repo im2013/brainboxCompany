@@ -6,13 +6,8 @@
         <title>Brainy features</title>
         <script type="module" src="https://unpkg.com/vue@3/dist/vue.esm-browser.js"></script>
         <link rel="stylesheet" href="/brainboxCompany/stylesheets/style.css">
-        <style>
-            body {
-              overflow: hidden;
-            }
-        </style>
     </head>
-    <body>
+    <body class="scroll">
         <div id="navBar">
             <ul>
             <img src="/brainboxCompany/images/brainbox_logo.png" alt="brainbox logo" width="55px" height="auto">
@@ -26,36 +21,39 @@
             </ul>
         </div>
 
-        <div class="featureContent fade" style="display: block;">
-            <img src="/brainboxCompany/images/Brainy_showcase.png" alt="" width="auto" height="400px" style="margin: 0;">
-            <div class="text">
-                <h1> Your personal assistant </h1>
-                Brainy can help you out with tips and tricks to make sure you use Brainbox to the fullest.
-            </div>
-        </div>
+        <div id="spacer"></div>
 
-        <div class="featureContent fade" style="display: none;">
-            <img src="/brainboxCompany/images/settings.png" alt="" width="auto" height="400px" style="margin: 0;">
-            <div class="text">
-                <h1> Clear and easy settings </h1>
-                Brainy also helps with your settings, making it clear what each setting dose.
+        <div class="content">
+            <div id="features">
+                <ul>
+                    <li class="button Brainy active" onclick=change(0)><p>Your personal assistant</p></li>
+                    <li class="button Brainy" onclick=change(1)><p>Clear and easy settings</p></li>
+                    <li class="button Brainy" onclick=change(2)><p>Ask questions</p></li>
+                </ul>
             </div>
-        </div>
-
-        <div class="featureContent fade" style="display: none;">
-            <img src="/brainboxCompany/images/FAQ.png" alt="" width="auto" height="400px" style="margin: 0;">
-            <div class="text">
-                <h1> Ask questions </h1>
-                Brainy can answer any question you have about Brainbox or revisit your past questions.
+            <div class="featureContent fade" style="display: block;">
+                <img src="/brainboxCompany/images/Brainy_showcase.png" alt="" width="auto" height="400px" style="margin: 0;">
+                <div class="text">
+                    <h1> Your personal assistant </h1>
+                    Brainy can help you out with tips and tricks to make sure you use Brainbox to the fullest.
+                </div>
             </div>
-        </div>
 
-        <div id="features">
-            <ul>
-                <li class="button Brainy active" onclick=change(0)><p>Your personal assistant</p></li>
-                <li class="button Brainy" onclick=change(1)><p>Clear and easy settings</p></li>
-                <li class="button Brainy" onclick=change(2)><p>Ask questions</p></li>
-            </ul>
+            <div class="featureContent fade" style="display: none;">
+                <img src="/brainboxCompany/images/settings.png" alt="" width="auto" height="400px" style="margin: 0;">
+                <div class="text">
+                    <h1> Clear and easy settings </h1>
+                    Brainy also helps with your settings, making it clear what each setting dose.
+                </div>
+            </div>
+
+            <div class="featureContent fade" style="display: none;">
+                <img src="/brainboxCompany/images/FAQ.png" alt="" width="auto" height="400px" style="margin: 0;">
+                <div class="text">
+                    <h1> Ask questions </h1>
+                    Brainy can answer any question you have about Brainbox or revisit your past questions.
+                </div>
+            </div>
         </div>
 
         <script>
