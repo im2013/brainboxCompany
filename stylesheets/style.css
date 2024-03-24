@@ -64,7 +64,7 @@ a {
 }
 
 #companyInfo p {
-  font-size: 10px;
+  font-size: 8px;
   line-height: 1.6;
   color: #777; 
 }
@@ -98,7 +98,7 @@ a {
   color: #443277; 
   margin-bottom: 0px;
   padding: 20px;
-  padding-left: 80px;
+  padding-left: 5vw;
 }
 
 #teamGridContainer {
@@ -106,7 +106,6 @@ a {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  padding: 20px;
 }
 
 .teamMemberInfo {
@@ -114,8 +113,8 @@ a {
 }
 
 .teamMember {
-  height: 20vh;
-  flex: 0 0 calc(28% - 20px);
+  height: 110px;
+  flex: 0 0 calc(15vw - 10px);
   background-color: #f7f7f7;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(36, 34, 34, 0.1);
@@ -126,6 +125,7 @@ a {
 
 .teamMember img {
   max-width: 50px;
+  min-width: 14px;
   width: 30%; 
   height: auto;
   border-radius: 100%; 
@@ -143,6 +143,12 @@ a {
   display: block;
   font-size: 6px;
   margin: 10px 0;
+}
+
+.aboutusPage { overflow: visible; }
+
+@media only screen and (min-height: 720px) {
+  .aboutusPage { overflow: hidden; }
 }
 
 #navBar ul {
@@ -427,11 +433,12 @@ a {
     #features {top: -100px;}
 
     #companyInfo h2 {font-size: 25px;}
-    #companyInfo p {font-size: 12px;}
+    #companyInfo p {font-size: 10px;}
     #ourTeam h2 {font-size: 25px;}
     .teamMember h1 {font-size: 15px;}
     .teamMember h3 {font-size: 10px;}
     .teamMember p {font-size: 8px;}
+    .teamMember {height: 130px;}
   }
   
   /* For desktop: */
@@ -439,10 +446,10 @@ a {
     .featureContent {left: 40%;}
 
     #companyInfo h2 {font-size: 30px;}
-    #companyInfo p {font-size: 13px;}
     #ourTeam h2 {font-size: 30px;}
     .teamMember h1 {font-size: 20px;}
     .teamMember h3 {font-size: 13px;}
+    .teamMember {height: 180px;}
   }
   
   @media only screen and (min-width: 930px) {
@@ -454,6 +461,7 @@ a {
     #features {top: -120px;}
 
     #companyInfo h2 {font-size: 40px;}
+    #companyInfo p {font-size: 12px;}
     #ourTeam h2 {font-size: 40px;}
     .teamMember h3 {font-size: 15px;}
     .teamMember p {font-size: 10px;}  
